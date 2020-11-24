@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.Socket;
@@ -36,7 +35,7 @@ public class NetUtil {
             socket.close();
         } catch (IOException e) {
             //e.printStackTrace();
-            System.out.println("----------端口"+port+"没有被开启");
+            System.out.println("The port: "+port+" is not open");
         }finally {
             socket.close();
         }

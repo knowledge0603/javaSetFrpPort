@@ -5,12 +5,10 @@ import java.io.IOException;
 public class PathUtil {
 
     public static String getCurrentPath() {
-
         Class<?> caller = getCaller();
         if (caller == null) {
             caller = PathUtil.class;
         }
-
         return getCurrentPath(caller);
     }
 
@@ -44,6 +42,5 @@ public class PathUtil {
         }
         return path;
     }
-
 }
 
